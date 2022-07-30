@@ -9,4 +9,4 @@ the project is about generating name and image of dinosaurs that uses two API (u
 +  __Flex__
 +  __Transition__
 ___
-You can see website for __live__ [__HERE__](https://shakstick.github.io/dinosaur_generator/)
+
