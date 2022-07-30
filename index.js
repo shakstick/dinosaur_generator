@@ -1,4 +1,6 @@
-import "dotenv/config";
+if (process.env.NODE_ENV !== "production") {
+  import("dotenv/config");
+}
 import express from "express";
 import fetch from "node-fetch";
 
@@ -17,7 +19,7 @@ app.get("/dinosaur", async (req, res) => {
 // UNSPLASH API
 app.get("/image", async (req, res) => {
   await fetch(
-    `https://api.unsplash.com/photos/random?client_id=${process.env.CLIENT_ID}&query=flower`
+    `https://api.unsplash.com/photos/random?client_id=${process.env.CLIENT_ID}&query=dinosaur`
   )
     .then((response) => response.json())
     .then((data) => res.send(data));
