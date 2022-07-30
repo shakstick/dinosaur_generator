@@ -4,8 +4,8 @@ const copyIcon = document.getElementById("copy-icon");
 const copyText = document.getElementById("copy-text");
 const section = document.getElementById("section");
 
-// fetchDinoName();
-// fetchDinoImage();
+fetchDinoName();
+fetchDinoImage();
 
 async function fetchDinoName() {
   await fetch("/dinosaur")
