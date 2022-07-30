@@ -8,11 +8,34 @@
 
     <!-- CSS FILE -->
     <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/b5083f9d17.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1>Dinosaur Generator</h1>
-    <button id="btn-gnr">generate dinosaur</button>
-    <img src="" alt="dinosaur image" />
+    <button id="btn-gnr" title="Click me!">generate dinosaur</button>
+    <section id="section">
+      <div>
+        <h2 id="dino-name" class="hidden"></h2>
+        <div class="hidden copy-icon-parent" id="copy-icon">
+          <i class="fa fa-clone" aria-hidden="true"></i>
+        </div>
+      </div>
+      <p class="copy-text" id="copy-text">COPIED!</p>
+    </section>
+
     <script src="./script.js"></script>
   </body>
 </html>
